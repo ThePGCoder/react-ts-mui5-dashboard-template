@@ -1,0 +1,34 @@
+:root {
+  font-family: "Poppins", sans-serif;
+}
+
+.drawer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 320px;
+  height: 100vh;
+  animation: showDrawer 0.25s;
+  z-index: 10000;
+  overflow-y: auto;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(15, 15, 15);
+  opacity: 0.5;
+  z-index: 9999;
+}
+
+@keyframes showDrawer {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
