@@ -1,12 +1,9 @@
-import React, { ReactNode, useEffect, useState } from "react";
+import React, { ReactNode, useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Sidebar from "./Sidebar";
 import { Box } from "@mui/material";
 import Drawer from "./Drawer";
-
-const drawerWidth = 320;
-
 interface LayoutProps {
   children: ReactNode;
 }
